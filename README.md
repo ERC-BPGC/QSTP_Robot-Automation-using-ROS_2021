@@ -1,6 +1,6 @@
 # QSTP Robot Automation Using ROS
 
-This repository contains all reading materials from the mechatronics summer course taught by [Srujan Deolasee](https://github.com/Srujan-D), [Suhrudh S](https://github.com/SuhrudhSarathy) and [Sushant Swamy](https://github.com/sushant1212), as part of the QSTP initiative. Automation and Control in Robotics is a fast growing field with exciting innovations coming out with a rapid pace (check out [1](https://www.youtube.com/watch?v=bmNaLtC6vkU) & [2](https://www.youtube.com/watch?v=_sBBaNYex3E)). In this course we hope to familiarise you with the basic tools and techniques that are at the core of such developments.
+This repository contains all material from the Robot Automation using ROS summer course taught by [Srujan Deolasee](https://github.com/Srujan-D), [Suhrudh S](https://github.com/SuhrudhSarathy) and [Sushant Swamy](https://github.com/sushant1212), as part of the QSTP initiative. Automation and Control in Robotics is a fast growing field with exciting innovations coming out with a rapid pace (check out [1](https://www.youtube.com/watch?v=bmNaLtC6vkU) & [2](https://www.youtube.com/watch?v=_sBBaNYex3E)). In this course we hope to familiarise you with the basic tools and techniques that are at the core of such developments.
 
 ## Course Structure
 
