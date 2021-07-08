@@ -28,6 +28,8 @@ Note that this part is unnecessary if you followed the given instructions to set
 ```sudo apt install terminator```
 
 \- Code Editors: A good editor can go a long way in boosting productivity. We recommend [VSCode](https://code.visualstudio.com/) which has plugins for python and ROS. A comprehensive guide for how to integrate ROS into your favourite IDE can be found [here](http://wiki.ros.org/IDEs).
+\- [catkin_tools](https://catkin-tools.readthedocs.io/en/latest/installing.html): A better alternative for `catkin_make`. Follow the instructions given in the installation page.
+
 ## 4. ROS Packages
 ➔ You can install already developed ROS packages using the apt (packet manager for Ubuntu). Replace ```<package_name>``` name of the ROS package
 
@@ -37,10 +39,44 @@ Note that this part is unnecessary if you followed the given instructions to set
 
 ```sudo apt install ros-$ROS_DISTRO-turtlebot3-*```
 
+Note: For ROS Noetic and above, Installation from Source is necessary. To install from source, follow these Instructions:
+
+1. Go to you catkin workspace.
+    ```
+    cd ~/catkin_ws/src
+    ```
+    If you have not yet set up your catkin workspace, you can do that by:
+    ```
+    cd 
+    mkdir -p catkin_ws/src
+    ```
+2. Clone the relevant repositories
+    ```
+    git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+    git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+    git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+    ```
+3. Build your workspace
+    ```
+    catkin build
+    ```
+    or
+    ```
+    cd ..
+    catkin_make
+    ```
+
 ➔ Set the default Turtlebot model as “burger” by adding the following line at the end of your _.bashrc_ file -
 
 ```export TURTLEBOT3_MODEL=burger```
-
+➔ If you have installed turtlebot in your catkin workspace(i.e. `catkin_ws`), don't forget to source it before running the below command. Every time you open a terminal, you can source your workspace by
+```
+source devel/setup.bash
+```
+or you can add this to your _.bashrc_ file:
+```
+source ~/catkin_ws/devel/setup.bash
+```
 ➔ Test your Turtlebot and Gazebo setup by launching a sample launch file using the following command -
 
 ```roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch```
