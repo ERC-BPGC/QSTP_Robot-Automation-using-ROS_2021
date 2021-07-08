@@ -12,4 +12,4 @@ The resources for this week can be found [here](https://github.com/ERC-BPGC/QSTP
 If you face any difficulty in completing the following tasks, please feel free to contact the team.
 
 ## Assignment
-The Assignment for this week can be found [here](https://github.com/ERC-BPGC/QSTP_Robot-Automation-using-ROS_2021/blob/main/WEEK%201/ASSIGNMENT.md)
+The Assignment for this week will be updated soon.
