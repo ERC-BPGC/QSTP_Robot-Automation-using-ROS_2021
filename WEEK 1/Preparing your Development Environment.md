@@ -73,7 +73,7 @@ source devel/setup.bash
 ```
 To avoid doing this everytime you can add this to your _.bashrc_ file:
 ```
-source ~/catkin_ws/devel/setup.basj
+source ~/catkin_ws/devel/setup.bash
 ```
 ➔ Test your Turtlebot and Gazebo setup by launching a sample launch file using the following command -
 
