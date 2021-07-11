@@ -41,9 +41,6 @@ class Unicycle:
         Return:
             x, y, theta (float): final pose 
         """
-        x = 0
-        y = 0
-        z = 0
 
         return x, y, theta
 
