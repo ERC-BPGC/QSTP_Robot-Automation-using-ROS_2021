@@ -10,7 +10,7 @@ If you are unable to dual boot for any reason, you can try setting up a virtual 
 In the unfortunate case that the **above options do not work**, for Windows users there is still a way - [WSL](https://ubuntu.com/wsl). Do be warned however, this path is fraught with frustration and much debugging. Only continue if you have exhausted other options. For a guide on setting up WSL for ROS, look [here](https://janbernloehr.de/2017/06/10/ros-windows). 
 
 ## 2. Robotics Operating System (ROS)
-Note that this part is unnecessary if you followed the given instructions to set up a VM. For everyone else, this part is **essential**. Different versions of Ubuntu need different variants of ROS. Instructions give below -
+Note that this part is unnecessary if you followed the given instructions to set up a VM. For everyone else, this part is **essential**. Different versions of Ubuntu need different variants of ROS. Instructions give below (Please follow the instructions carefully)-
 
 ➔ Ubuntu 20.04: ROS [Noetic](http://wiki.ros.org/noetic/Installation/Ubuntu)
 
@@ -28,6 +28,7 @@ Note that this part is unnecessary if you followed the given instructions to set
 ```sudo apt install terminator```
 
 \- Code Editors: A good editor can go a long way in boosting productivity. We recommend [VSCode](https://code.visualstudio.com/) which has plugins for python and ROS. A comprehensive guide for how to integrate ROS into your favourite IDE can be found [here](http://wiki.ros.org/IDEs).
+\- [catkin_tools](https://catkin-tools.readthedocs.io/en/latest/installing.html): A better alternative for `catkin_make`. Follow the instructions given in the instruction page carefully.
 ## 4. ROS Packages
 ➔ You can install already developed ROS packages using the apt (packet manager for Ubuntu). Replace ```<package_name>``` name of the ROS package
 
@@ -37,10 +38,43 @@ Note that this part is unnecessary if you followed the given instructions to set
 
 ```sudo apt install ros-$ROS_DISTRO-turtlebot3-*```
 
+__Note:__ For Ros Noetic and above, you will have to build the Turtlebot package from source. Follow the instrctions below.
+1. Go to your catkin workspace
+```
+cd ~/catkin_ws/src
+```
+If you have not yet set up you catkin workspace, you can do that by:
+```
+cd
+mkdir -p catkin_ws/src
+```
+2. Clone the relevant repositories
+```
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+```
+3. Build your workspace
+```
+catkin build
+```
+or 
+```
+cd ..
+catkin_make
+```
 ➔ Set the default Turtlebot model as “burger” by adding the following line at the end of your _.bashrc_ file -
 
 ```export TURTLEBOT3_MODEL=burger```
-
+➔ If you have installed turtlebot from source, you will have to source your catkin workspace(i.e.```catkin_ws```) everytime before running turtlebot3. You can do that by:
+```
+cd ~/catkin_ws
+source devel/setup.bash
+```
+To avoid doing this everytime you can add this to your _.bashrc_ file:
+```
+source ~/catkin_ws/devel/setup.basj
+```
 ➔ Test your Turtlebot and Gazebo setup by launching a sample launch file using the following command -
 
 ```roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch```
