@@ -79,7 +79,9 @@ source ~/catkin_ws/devel/setup.bash
 
 ```roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch```
 
-If you see the Turtlebot in the gazebo environment, then you may assume that the installation is successful!
+If you see the Turtlebot in the gazebo environment like the figure below, then you may assume that the installation is successful!
+
+<img src="https://emanual.robotis.com/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png" style="height: 100px; width:100px;"/>
 
 ## 5. Tips for getting things to work + some helpful facts
 ➔ Make a habit of running sudo apt update before installing packages in linux.
