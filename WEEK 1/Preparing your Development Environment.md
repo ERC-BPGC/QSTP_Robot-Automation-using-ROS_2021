@@ -38,7 +38,7 @@ Note that this part is unnecessary if you followed the given instructions to set
 
 ```sudo apt install ros-$ROS_DISTRO-turtlebot3-*```
 
-__Note:__ For Ros Noetic and above, you will have to build the Turtlebot package from source. Follow the instrctions below.
+__Note:__ For Ros Noetic and above, you will have to build the Turtlebot package from source. Follow the instructions below.
 1. Go to your catkin workspace
 ```
 cd ~/catkin_ws/src
