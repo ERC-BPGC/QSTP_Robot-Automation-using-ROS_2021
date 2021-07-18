@@ -8,7 +8,7 @@ Like all other assignments, let us start with the 'Hello, World!'. Write two nod
 Now write a third node which will subscribe to the topics */hello* and */world*, and publish the combined message 'Hello, World!' on the topic */helloworld*
 
 ## 2. Client - Service Model [10 points]
-Write a server which accepts a request with the state of the robot (x, y, theta) as well as the control commands (v, w). The server should have default values for dt (0.05) and timesteps n (50). All these parameters are similar to the [week 1](http://https://github.com/ERC-BPGC/QSTP_Robot-Automation-using-ROS_2021/blob/main/WEEK%201/ASSIGNMENT.md "week 1") assignment. The server will return the intermeditate trajectory of the robot (similar to the last week's assignment). You can plot the trajectory in the client node.
+Write a server which accepts a request with the state of the robot (x, y, theta) as well as the control commands (v, w). The server should have default values (i.e. you can hard code them in the server code) for *dt* (0.05) and *timesteps n* (50). All these parameters are similar to the [week 1](http://https://github.com/ERC-BPGC/QSTP_Robot-Automation-using-ROS_2021/blob/main/WEEK%201/ASSIGNMENT.md "week 1") assignment. The server will return the intermeditate trajectory of the robot (similar to the last week's assignment). You can plot the trajectory in the client node.
 
 For a guide on services, look at Chapter 4 of Morgan Quigley. For more infor on messages, look at [this](http://http://wiki.ros.org/ROS/Tutorials/CreatingMsgAndSrv "this") link or page 39 of Morgan Quigley. You may use the code you
 have written in last week's assignment.
