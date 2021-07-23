@@ -17,4 +17,4 @@ Since you already have a controller ready, can you move the turtlebot wherever i
 1. Write a launch file `pid_controller_goto.launch` that should launch the controller along with Rviz.
 2. From Rviz, send a `2D Nav Goal` to command the turtlebot to go. Refer to this [page](http://wiki.ros.org/navigation/Tutorials/Using%20rviz%20with%20the%20Navigation%20Stack) to know more about the `2D Nav Goal`.
 ### Submission
-1. Submit the launch file in the same ros package and send a `Video Recording` of the turtlebot reaching the goal. 
+1. Place the launch file in the same ros package, push your changes to your repository. If possible add a `Video Recording` of the turtlebot reaching the multiple goals.
