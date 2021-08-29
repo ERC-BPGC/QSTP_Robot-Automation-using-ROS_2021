@@ -16,4 +16,4 @@ You are required to submit the following.
 2. The solution `turtlebot_spy` package.
 3. There are no obstacles in this environment. How would tackle a scenario where there are sparse obstacles? Write an explanation of your solution. Pseudo code of the proposed solution will be appreciated. You can submit a .md file name `EXPLANATION.md` in the package.
 
-___Note__: The turtlebot_spy package can be found [here](turtlebot_spy/README.md). Instructions to launch the required files are given there.
+__Note__: The turtlebot_spy package can be found [here](turtlebot_spy/README.md). Instructions to launch the required files are given there.
